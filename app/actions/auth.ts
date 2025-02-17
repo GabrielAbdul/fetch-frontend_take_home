@@ -4,7 +4,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from 'next/cache'
 
 const login = async (prevState: any, formData: FormData) => {
-  const url = "https://frontend-take-home-service.fetch.com/auth/login";
+  const url = process.env.BASE_URL + "/auth/login";
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
 
