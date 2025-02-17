@@ -27,6 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <div className="text-5xl text-center">Furry Fetcher</div>
         {children}
       </body>
     </html>
